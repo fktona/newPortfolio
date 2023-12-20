@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@300;400;700;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,600;1,700&family=Noto+Sans+Georgian:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.intro {
+    background-image: linear-gradient(to  top right,#ff4d05,#f57b4b, #f5a585,#f7d4c6, #ffffff);
+    background-size: cover;
+  
+        -webkit-background-clip: text;  
+        -moz-background-clip: text;
+           background-clip: text;
+              color: transparent;
+            background-position: start;
+             
+             background-repeat: repeat; 
+        animation: animate 12s linear;
+
+
+
+}
+
+
+@keyframes animate {
+    0% {
+        background-position: 10% 20%;
+        background-size: 50px 50px;
+             background-repeat: repeat; 
+         background-repeat: no-repeat; 
+    }
+       100% {
+        background-position: 100% 100%;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        
+    }
+}
