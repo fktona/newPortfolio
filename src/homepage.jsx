@@ -179,7 +179,7 @@ function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, mes
             initial="hidden"
             animate={controls}
             variants={fadeInUpVariants}
-           className="flex p-5 font-mono justify-between item-center gap-4 flex-wrap text-md fonthsemibold">
+           className="flex p-5 font-mono justify-start item-center gap-4 flex-wrap text-md fonthsemibold">
                           <li>
       <img src="" alt=""/>
       <p className="text-center py-1 px-2 bg-accent rounded-lg">HTML</p>
@@ -246,7 +246,7 @@ function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, mes
           className="grid p-2 md:p-8 grid-cols-1 md:grid-cols-2 gap-8 relative justify-center">
                         <li className="flex shadow-accent/[0.68] flex-col justify-center p-2 shadow-md text-md"><img src={"https://i.ibb.co/sF6dvMt/Web-capture-26-9-2023-151931-culinary-oasis-netlify-app.jpg"} alt="" className="h-[250px] object-cover relative" /><div className="font-semibold flex flex-col gap-2 p-2 justify-center items-center"><span className="text-2xl p-1 m-2 font-bold border-2 border-accent">CULINARY OASIS</span>
   <span>This an E-commerce website for ordering food uses paystack as mode of payment</span>
- <p className="flex items-center w-full gap-2 justify-start"> Stack used:
+ <p className="flex items-start flex-col lg:flex-row w-full gap-2 justify-center"> Stack used:
    <span className="text-center py-1 px-2 bg-accent rounded-lg">React</span>
    <span className="text-center py-1 px-2 bg-accent rounded-lg">Tailwind</span>
    <span className="text-center py-1 px-2 bg-accent rounded-lg">Firebase</span>
@@ -259,7 +259,7 @@ function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, mes
   <li className="flex flex-col shadow-accent/[0.68] justify-center p-2 shadow-md text-md"><img src={"https://i.ibb.co/1skNdYX/Web-capture-26-9-2023-151820-hng-movie-app-netlify-app.jpg"} alt="" className="h-[250px] object-cover relative"/><div className="font-semibold flex flex-col gap-2 p-2 justify-center items-center"><span className="text-2xl p-1 m-2 font-bold border-2 border-accent">MovieBox</span>
   <span>This a movie website for checking upcoming and
      trending movies and also see the trailer all the movie data are gotten from TMBD Api</span>
- <p className="flex items-center w-full gap-2 justify-start"> Stack used:
+ <p className="flex items-start flex-col lg:flex-row w-full gap-2 justify-center"> Stack used:
    <span className="text-center py-1 px-2 bg-accent rounded-lg">React</span>
    <span className="text-center py-1 px-2 bg-accent rounded-lg">Tailwind CSS</span>
  </p>  <span className="flex justify-between w-full px-3 m-4">
@@ -270,7 +270,7 @@ function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, mes
   
   <li className="flex flex-col shadow-accent/[0.68] justify-center p-2 shadow-md text-md"><img src={"https://i.ibb.co/NpZwPgV/Web-capture-26-9-2023-15171-image-hng-galleryapp-netlify-app.jpg"} alt=""  className="h-[250px] object-cover relative"/><div className="font-semibold flex flex-col gap-2 p-2 justify-center items-center"><span className="text-2xl p-1 m-2 font-bold border-2 border-accent">View Vault</span>
   <span>This an image gallery web app for viewing  difference images and also able to rearrange them  all image data are gotten from pixabay Api </span>
- <p className="flex items-center  w-full gap-2 justify-start"> Stack used:
+ <p className="flex items-start flex-col lg:flex-row w-full gap-2 justify-center"> Stack used:
    <span className="text-center py-1 px-2 bg-accent rounded-lg">React</span>
    <span className="text-center py-1 px-2 bg-accent rounded-lg">Tailwind CSS</span>
  </p>
@@ -282,7 +282,7 @@ function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, mes
   
   <li className="flex flex-col shadow-accent/[0.68] justify-center p-2 shadow-md text-md"><img src={"https://i.ibb.co/sC3T19R/IMG-20230926-160033.jpg"} alt=""  className="h-[250px] object-fill relative"/><div className="font-semibold flex flex-col gap-2 p-2 justify-center items-center"><span className="text-2xl p-1 m-2 font-bold border-2 border-accent">IKAN FOUNDATION</span>
   <span>This a website design for foundation groups that all them to show there project and achievements </span>
- <p className="flex items-center  w-full gap-2 justify-start"> Stack used:
+ <p className="flex items-start flex-col lg:flex-row w-full gap-2 justify-center"> Stack used:
    <span className="text-center py-1 px-2 bg-accent rounded-lg">HTML</span>
    <span className="text-center py-1 px-2 bg-accent rounded-lg">CSS</span>
    <span className="text-center py-1 px-2 bg-accent rounded-lg">JavaScript</span>
@@ -294,7 +294,7 @@ function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, mes
   
   <li className="flex flex-col shadow-accent/[0.68] justify-center p-2 shadow-md text-md font-robo"><img src={"https://i.ibb.co/JjgBh0H/Web-capture-26-9-2023-152356-aikclock-netlify-app.jpg"} alt="" className="h-[250px] object-cover relative"/><div className="font-semibold flex flex-col gap-2 p-2 justify-center items-center"><span className="text-2xl p-1 m-2 font-bold border-2 border-accent">Aik TIMER</span>
   <span>This a web app thst has both timer and stopwatch functionality it also allow user to download there timer results</span>
- <p className="flex items-center w-full gap-2 justify-start"> Stack used:
+ <p className="flex items-start flex-col lg:flex-row w-full gap-2 justify-center"> Stack used:
    <span className="text-center py-1 px-2 bg-accent rounded-lg">Html</span>
    <span className="text-center py-1 px-2 bg-accent rounded-lg"> CSS</span>
    <span className="text-center py-1 px-2 bg-accent rounded-lg">JavaScript</span>
@@ -307,7 +307,7 @@ function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, mes
   
   <li className="flex flex-col shadow-accent/[0.68]  justify-center p-2 shadow-md text-md"><img src={"https://i.ibb.co/51MQvtD/Web-capture-26-9-2023-152428-aikcal-netlify-app.jpg"} alt="" className="h-[250px] object-cover relative"/><div className="font-semibold flex flex-col gap-2 p-2 justify-center items-center"><span className="text-2xl p-1 m-2 font-bold border-2 border-accent">Aik Calculator</span>
   <span>This a simple calculator capable of simple mathematical operations </span>
- <p className="flex items-center w-full gap-2 justify-start"> Stack used:
+ <p className="flex items-start flex-col lg:flex-row w-full gap-2 justify-center"> Stack used:
    <span className="text-center py-1 px-2 bg-accent rounded-lg">HTML</span>
    <span className="text-center py-1 px-2 bg-accent rounded-lg"> CSS</span>
    <span className="text-center py-1 px-2 bg-accent rounded-lg"> JavaScript</span>
