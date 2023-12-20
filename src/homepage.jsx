@@ -3,6 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { AiFillLinkedin, AiFillTwitterSquare, AiFillGithub } from 'react-icons/ai';
 import { useEmail } from './assets/email/email';
 import SendEmailProvider from './assets/email/email';
+import { set } from 'animejs';
 
 function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, message, setMessage}) {
   const controls = useAnimation();
@@ -11,6 +12,7 @@ function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, mes
   const [isProjectsVisible, setIsProjectsVisible] = useState(false);
   const [isContactVisible, setIsContactVisible] = useState(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const[loading , setLoading] = useState(false) 
 
   const {state , sendEmail} = useEmail()
 
@@ -23,11 +25,12 @@ function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, mes
   };
 
   const handleSendClick = async () => {
-
+  setLoading(true)
    await sendEmail({name, email, contactNo, message})
   
     
       setIsFormSubmitted(true);
+      setLoading(false)
     
       setName('');
       setEmail('');
@@ -105,7 +108,7 @@ function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, mes
 
   return (
     <div className="relative  md:px-8">
-      <div className=" justify-center h-[100vh] top-[5rem]
+      <div className=" justify-center h-[100vh] md:top-[5rem] top-[4rem]
        relative font-robo  md:font-[3rem] 
        flex flex-col text-center items-start   space-y-6">
         <motion.span initial="hidden" animate={controls} variants={fadeInUpVariants}
@@ -176,7 +179,7 @@ function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, mes
             initial="hidden"
             animate={controls}
             variants={fadeInUpVariants}
-           className="flex p-5 font-mono justify-center items-cent gap-4 flex-wrap text-md fonthsemibold">
+           className="flex p-5 font-mono justify-between item-center gap-4 flex-wrap text-md fonthsemibold">
                           <li>
       <img src="" alt=""/>
       <p className="text-center py-1 px-2 bg-accent rounded-lg">HTML</p>
@@ -380,7 +383,7 @@ function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, mes
                     className="app-form-button px-2 py-1 border-2 border-primary hover:bg-primary"
                     onClick={handleSendClick}
                   >
-                    SEND
+                   { loading ? 'Sending...' : 'SEND'}
                   </button>
                 </div>
                 {isFormSubmitted && <div className="text-primary mt-2 ">{state?.message}</div>}
