@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { AiFillLinkedin, AiFillTwitterSquare, AiFillGithub } from 'react-icons/ai';
 import { useEmail } from './assets/email/email';
-import SendEmailProvider from './assets/email/email';
-import { set } from 'animejs';
+
+
 
 function Homepage( {name, setName, email, setEmail, contactNo, setContactNo, message, setMessage}) {
   const controls = useAnimation();
